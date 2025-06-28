@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HashMap Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>HashMap Visualizer</h1>
+
+  <form id="hashControls">
+    <input type="text" id="key" placeholder="Key" />
+    <input type="text" id="value" placeholder="Value" />
+    <button type="button" onclick="insertEntry()">Set</button>
+    <button type="button" onclick="removeEntry()">Remove</button>
+    <button type="button" onclick="clearMap()">Clear</button>
+  </form>
+
+  <div class="container">
+    <h2>Buckets</h2>
+    <div class="buckets" id="buckets"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
